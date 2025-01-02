@@ -29,17 +29,17 @@ jobs:
         run: |
           bun install
 
-          - name: build
-          env:
-            BASE_PATH: '/${{ github.event.repository.name }}'
-          run: |
-            bun run build
+      - name: build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: |
+          bun run build
 
       - name: get dir
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
-          ls -la
+          "ls -la"
 
       #- name: Upload Artifacts
       #  uses: actions/upload-pages-artifact@v3
