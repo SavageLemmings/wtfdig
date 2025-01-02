@@ -41,11 +41,11 @@ jobs:
         run: |
           ls build
 
-      #- name: Upload Artifacts
-      #  uses: actions/upload-pages-artifact@v3
-      #  with:
-      #    # this should match the `pages` option in your adapter-static options
-      #    path: './wtfdig/build/'
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # this should match the `pages` option in your adapter-static options
+          path: './wtfdig/build/'
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
