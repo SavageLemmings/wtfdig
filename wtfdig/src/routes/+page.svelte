@@ -40,8 +40,9 @@
 				<div>
 					<h2>Which strat are you using?</h2>
 					<RadioGroup>
-						<RadioItem bind:group={stratName} name="stratName" value={'raidplan'}>Raidplan (Aurelia)</RadioItem>
+						<RadioItem bind:group={stratName} name="stratName" value={'raidplan'}>Raidplan (Aurelia/wfJ/o1Z)</RadioItem>
 						<RadioItem bind:group={stratName} name="stratName" value={'codcar'}>CODCAR</RadioItem>
+						<RadioItem bind:group={stratName} name="stratName" value={'healerout'}>HealerOut</RadioItem>
 					</RadioGroup>
 				</div>
 				<div>
@@ -62,7 +63,7 @@
 					</RadioGroup>
 				</div>
 				<div>
-					<h2>Which party are you?</h2>
+					<h2>Which light party are you in?</h2>
 					<RadioGroup>
 						<RadioItem bind:group={party} name="party" value={1}>1</RadioItem>
 						<RadioItem bind:group={party} name="party" value={2}>2</RadioItem>
@@ -75,6 +76,8 @@
 					<img style:max-height={'400px'} src={'./strats/raidplan/overall.png'} />
 				{:else if stratPackage?.stratName === 'codcar'}
 					<img style:max-height={'400px'} src={'./strats/codcar/overall.png'} />
+				{:else if stratPackage?.stratName === 'healerout'}
+					<img style:max-height={'400px'} src={'./strats/healerout/overall.png'} />
 				{/if}
 			</div>
 		</div>
@@ -108,7 +111,7 @@
 						<RadioGroup>
 							<RadioItem bind:group={alignment} name="alignment" value={"original"}>Original</RadioItem>
 							<RadioItem bind:group={alignment} name="alignment" value={"truenorth"}>True North</RadioItem>
-							<RadioItem bind:group={alignment} name="alignment" value={"addrelative"}>Add Relative</RadioItem>
+							<RadioItem bind:group={alignment} name="alignment" value={"addrelative"}>Wall Relative</RadioItem>
 						</RadioGroup>
 					</div>
 				{/if}
@@ -119,7 +122,7 @@
 					{#key [spotlight, alignment]}
 					<div class="space-y-4" class:col-span-2={step.alignmentImages && step.alignmentImages[alignment]}>
 						<div class="uppercase text-xl">{step.mechanic}</div> 
-						<div class="whitespace-pre text-l">{step.description}</div>
+						<div class="whitespace-pre-wrap text-l">{step.description}</div>
 						<img src={(step.alignmentImages && step.alignmentImages[alignment]) ? step.alignmentImages[alignment] : step.imageUrl} style:mask-image={getMask(step)} style:transform={step.alignmentTransforms ? step.alignmentTransforms[alignment] : step.transform} />
 					</div>
 					{/key}
@@ -143,7 +146,7 @@
 											{#key [spotlight, alignment]}
 											<div class="space-y-4" class:col-span-2={step.alignmentImages && step.alignmentImages[alignment]}>
 												<div class="uppercase text-xl">{step.mechanic}</div> 
-												<div class="whitespace-pre text-l">{step.description}</div>
+												<div class="whitespace-pre-wrap text-l">{step.description}</div>
 												<img src={(step.alignmentImages && step.alignmentImages[alignment]) ? step.alignmentImages[alignment] : step.imageUrl} style:mask-image={getMask(step)} style:transform={step.alignmentTransforms ? step.alignmentTransforms[alignment] : step.transform} />
 											</div>
 											{/key}

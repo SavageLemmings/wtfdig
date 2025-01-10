@@ -16,17 +16,21 @@
         type: 'alert',
         title: 'Changelog',
         body: 
-`1/2/2024: Updated some styling to make the swap assignments more obvious (yes melees will sometimes need to take a ranged spot), added some info to footer
-1/1/2024: Added big overview image, rotated AOE spreads correctly for CODCAR, added post-swap locations for everyone starting on tiles
+`1/9/2025: switched melee spread spots for raidplan A+C, fixed text wrapping at high zoom
+1/7/2025: added HealerOut to the strat selector - added by Jake Hale @ Louisoux
+1/5/2025: fixed raidplan spread spots to match where people end up after tether breaks, added pair partners + cleaned up phrasing
+1/3/2025: added wfJ/o1Z to the raidplan selector, changed Add Relative to Wall Relative for CODCAR
+1/2/2025: Updated some styling to make the swap assignments more obvious (yes melees will sometimes need to take a ranged spot), added some info to footer
+1/1/2025: Added big overview image, rotated AOE spreads correctly for CODCAR, added post-swap locations for everyone starting on tiles
 12/31/2024: Added Alignment buttons (Original, True North, Add Relative) for CODCAR, added Wild Charges to CODCAR tile players, some improvements to responsive sizing
 12/30/2024: Initial Release`,
         buttonTextCancel: 'Close',
-        modalClasses: 'whitespace-pre-wrap'
+        modalClasses: 'whitespace-pre-wrap',
     }
     const modalStore = getModalStore();
 </script>
 
-<Modal />
+<Modal regionBody="max-h-[600px] overflow-auto"/>
 <header class="container h-full mx-auto px-4 mx-auto md:my-12 my-4">
     <div class="flex flex-wrap justify-between items-center">
         <div class="text-2xl font-semibold">where the f do i go???? (Chaotic)</div>
