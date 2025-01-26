@@ -16,7 +16,12 @@
         type: 'alert',
         title: 'Changelog',
         body: 
-`1/9/2025: switched melee spread spots for raidplan A+C, fixed text wrapping at high zoom
+`1/21/2025: added warning for core-lateral and lateral-core swap in 7.16
+1/20/2025: added more comprehensive post-swap spots to HealerOut
+1/20/2025: fix idyll C postswap image rotation
+1/19/2025: added idyll/game8 strat - added by kizer
+1/10/2025: added more comprehensive post-swap spots to raidplan
+1/9/2025: switched melee spread spots for raidplan A+C, fixed text wrapping at high zoom
 1/7/2025: added HealerOut to the strat selector - added by Jake Hale @ Louisoux
 1/5/2025: fixed raidplan spread spots to match where people end up after tether breaks, added pair partners + cleaned up phrasing
 1/3/2025: added wfJ/o1Z to the raidplan selector, changed Add Relative to Wall Relative for CODCAR
