@@ -1,0 +1,1 @@
+import{Mt as e,Ut as t,jt as n}from"../chunks/C20GvSSA.js";import"../chunks/CQCxd1p9.js";import{t as r}from"../chunks/BSpGlI6-.js";import{n as i,r as a}from"../chunks/B5JqWHRC2.js";var o=t({load:()=>s}),s=()=>({strats:a,config:i});function c(t,i){e(i,!0),r(t,{get config(){return i.data.config},get strats(){return i.data.strats}}),n()}export{c as component,o as universal};

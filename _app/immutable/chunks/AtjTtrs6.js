@@ -1,0 +1,1 @@
+import{c as e,s as t}from"./C20GvSSA.js";import"./CQCxd1p9.js";import{t as n}from"./DK3oHnDO.js";function r(r,i){let a=t(i,[`$$slots`,`$$events`,`$$legacy`]),o=[[`path`,{d:`M12 2v20`}],[`path`,{d:`m8 18 4 4 4-4`}],[`path`,{d:`m8 6 4-4 4 4`}]];n(r,e({name:`move-vertical`},()=>a,{get iconNode(){return o}}))}export{r as t};
